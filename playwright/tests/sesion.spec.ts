@@ -4,7 +4,8 @@ import exp from 'constants';
 test('User session persists after page reload', async ({ page }) => {
   let user = 'user@example.com';
   let pass = '123';
-  let urlLogin = 'http://localhost:3000/login';
+  let url = 'http://localhost:3000';
+  let urlLogin = `${url}/login`;
   await page.goto(urlLogin);
 
   // Expect a title "to contain" a substring.
@@ -22,7 +23,7 @@ test('User session persists after page reload', async ({ page }) => {
   await page.reload();
 
   // Check that the sesion remains
-  await expect(page).toHaveURL('http://localhost:3000/user-panel');
+  await expect(page).toHaveURL(`${url}/user-panel`);
   await expect(page.locator('h1')).toHaveText('Proyecto Web Básico');
 
 });

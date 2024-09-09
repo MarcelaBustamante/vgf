@@ -20,7 +20,7 @@ npm start
 
 ### run cypress
 ```bash
-cd cypress/E2E
+cd cypress
 npx cypress open
 ```
 
