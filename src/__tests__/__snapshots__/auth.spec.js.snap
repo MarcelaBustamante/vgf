@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logout When user do log out then the storage should be clean 1`] = `
+<div
+  id="user-panel"
+>
+  <h2>
+    Panel de Usuario
+  </h2>
+  <p>
+    Email: 
+    user@example.com
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Editar Perfil
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Cerrar Sesión
+  </button>
+</div>
+`;
